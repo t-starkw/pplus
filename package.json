@@ -1,0 +1,27 @@
+{
+  "name": "pplus",
+  "version": "1.0.0",
+  "description": ">### Module xx UNC Coding Bootcamp Challenge - challenge title <br><br>\r >  Project description... what did u learn? what problem did u solve <br><br>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-starkw/pplus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-starkw/pplus/issues"
+  },
+  "homepage": "https://github.com/t-starkw/pplus#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
