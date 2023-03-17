@@ -27,7 +27,7 @@ function Signup() {
                             </div>
                             <div class="flex items-baseline justify-between">
                                 <button class="px-6 py-2 mt-4 text-white bg-orange-500 rounded-lg hover:bg-orange-600">Sign up</button>
-                                <a href="#" class="text-sm text-blue-600 hover:underline ml-3">Have an account? Log in</a>
+                                <a href="/login" class="text-sm text-blue-600 hover:underline ml-3">Have an account? Log in</a>
                             </div>
                         </div>
                     </form>

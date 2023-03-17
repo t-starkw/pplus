@@ -1,4 +1,5 @@
 import React from 'react';
+
 import "../styles/App.css";
 
 function Nav() {
@@ -18,20 +19,20 @@ function Nav() {
                     <div className=" w-full md:block md:w-auto" id="navbar-default">
                         <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-inter md:border-0">
                             <li>
-                                <a href="#" className="block py-2 pl-3 pr-4 text-white bg-orange-500 rounded md:bg-transparent md:text-orange-500 md:p-0 dark:text-white" aria-current="page">Home</a>
+                                <a href="/" className="block py-2 pl-3 pr-4 text-white bg-orange-500 rounded md:bg-transparent md:text-orange-500 md:p-0 dark:text-white" aria-current="page">Home</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="/generator"
                                     className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
                                     Generator</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="/profile"
                                     className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
                                     Profile</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="/login"
                                     className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
                                     Log In/Signup</a>
                             </li>
