@@ -6,15 +6,43 @@ import Signup from './components/SignupForm';
 import StorePwd from './components/StoreComp';
 import Profile from './pages/Profile';
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import './styles/App.css';
+
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
+
+const httpLink = createHttpLink({
+  uri: '/graphql',
+});
+
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
+
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
 
 function App() {
   return (
 
     <>
       <div className="overflow-hidden">
-        {/* <ApolloProvider client={client}> */}
+        <ApolloProvider client={client}>
           <Nav />
           <div className="container">
             <Routes>
@@ -26,7 +54,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
             </Routes>
           </div>
-        {/* </ApolloProvider> */}
+        </ApolloProvider>
       </div>
     </>
   );
