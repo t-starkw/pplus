@@ -3,7 +3,7 @@ import React from 'react';
 function Profile() {
     return (
         <>
-            <div className="py-20 bg-gray">
+            <div className="py-20 bg-gray w-screen max-h-screen">
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl font-bold mb-4 text-slate-900">
                         HI Person Profile

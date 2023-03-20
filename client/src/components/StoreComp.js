@@ -3,7 +3,7 @@ import React from "react";
 function StorePwd() {
     return (
         <>
-            <div className="py-20 bg-gray ">
+            <div className="py-20 bg-gray w-screen">
                 <div className="container mx-auto px-6 ">
                     <div class="flex sm:flex-col md:flex-row items-center justify-center bg-gray-100">
                         <div class="px-8 py-6 md:w-1/3 sm:w-4/5 mr-10 mt-8 mb-5 text-left bg-orange-400 shadow-lg min-h-full">
