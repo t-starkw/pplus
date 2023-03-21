@@ -48,7 +48,16 @@ function generatePwd(optionsArray, len) {
         pass += getRandom(chars)
     }
     console.log(pass)
+    window.localStorage.setItem('pwd', pass);
+    
+    console.log(localStorage)
     return pass
 }
 
-export {generatePwd}
+function getPwd() {
+    var pwd = localStorage.getItem('pwd')
+    console.log(pwd)
+    return pwd
+}
+
+export {generatePwd, getPwd}

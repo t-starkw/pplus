@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { generatePwd } from "../utils/pwdGenerator"
+
 function GeneratorComp() {
 
     const [len, setLen] = useState();
@@ -24,10 +25,10 @@ function GeneratorComp() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         generatePwd(optionsArray, len);
         console.log(optionsArray)
         console.log(len)
+        window.location.replace('/store');
 
     }
 

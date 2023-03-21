@@ -1,4 +1,5 @@
 import React from "react";
+import { getPwd } from "../utils/pwdGenerator"
 
 function StorePwd() {
     return (
@@ -12,8 +13,13 @@ function StorePwd() {
                             </h3>
                             <div>
                                 <label class="block" for="new-pass" className="text-2xl">Your new password:</label>
-                                <input type="text" placeholder="Ahsbb&&637299@1234" name="new-pass"
-                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-slate-600"></input>
+                                <textarea
+                                    readOnly
+                                    id="password"
+                                    value={getPwd()}
+                                    aria-label="Generated Password"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-slate-600"
+                                ></textarea>
                             </div>
                             <div className="mt-4">
                                 <label class="block" for="pass-acc" className="text-2xl">Assign this password to an account</label>
@@ -26,10 +32,8 @@ function StorePwd() {
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </>
-
-
     )
 }
 
