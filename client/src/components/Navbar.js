@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Auth from '../utils/auth';
 import "../styles/App.css";
 
 function Nav() {
@@ -26,16 +26,29 @@ function Nav() {
                                     className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
                                     Generator</a>
                             </li>
-                            <li>
-                                <a href="/profile"
-                                    className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
-                                    Profile</a>
-                            </li>
-                            <li>
-                                <a href="/login"
-                                    className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
-                                    Log In/Signup</a>
-                            </li>
+
+                            {Auth.loggedIn() ? (
+                                <>
+                                    <li>
+                                        <a href="/profile"
+                                            className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
+                                            Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'
+                                            onClick={Auth.logout}
+                                            className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
+                                            Log Out</a>
+                                    </li>
+                                </>
+                            ) : (
+                                <li>
+                                    <a href="/login"
+                                        className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
+                                        Log In/Signup</a>
+                                </li>
+                            )}
+
                         </ul>
                     </div>
                 </div>
