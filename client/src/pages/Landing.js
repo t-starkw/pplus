@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 function Landing() {
+
     return (
         <>
             <div className="py-20 bg-gray w-screen">
@@ -27,7 +29,7 @@ function Landing() {
                     </div>
 
                     <button className="bg-gray text-slate-900 font-bold rounded-full py-4 px-8 mt-5 shadow-lg uppercase tracking-wider">
-                        Get Started
+                    <Link to="/generator">Get Started</Link>
                     </button>
                 </div>
             </div>
