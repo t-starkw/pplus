@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-
+import { generatePwd } from "../utils/pwdGenerator"
 function GeneratorComp() {
 
     const [len, setLen] = useState();
     const [optionsArray, setOptionsArray] = useState([]);
 
-    const handleLength = (e) => {
+    const handleLength = async (e) => {
         setLen( e.target.value);
     }
 
-    const handleChange = (e) => {
+    const handleChange = async (e) => {
         const value = e.target.value;
         const checked = e.target.checked;
         console.log(value, checked);
@@ -22,10 +22,13 @@ function GeneratorComp() {
         }
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+
+        generatePwd(optionsArray, len);
         console.log(optionsArray)
         console.log(len)
+
     }
 
     return (
