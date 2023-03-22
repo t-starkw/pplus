@@ -28,10 +28,12 @@ mutation addUser($name: String!, $email: String!, $password: String!) {
 export const SAVE_PWD = gql`
   mutation savePwd($input: PwdInput!) {
     savePwd(input: $input) {
+        _id
         name
+        email
         pwdCount
         savedPasswords {
-          _id
+          #_id
           password
           site
       }

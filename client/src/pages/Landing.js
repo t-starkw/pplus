@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Auth from '../utils/auth';
 
 function Landing() {
 
@@ -29,7 +30,11 @@ function Landing() {
                     </div>
 
                     <button className="bg-gray text-slate-900 font-bold rounded-full py-4 px-8 mt-5 shadow-lg uppercase tracking-wider">
-                    <Link to="/generator">Get Started</Link>
+                        {Auth.loggedIn() ? (
+                            <Link to="/generator">Get Started</Link>
+                        ) : (
+                            <Link to="/login">Get Started</Link>
+                        )}
                     </button>
                 </div>
             </div>
