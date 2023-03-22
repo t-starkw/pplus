@@ -21,14 +21,14 @@ function Nav() {
                             <li>
                                 <a href="/" className="block py-2 pl-3 pr-4 text-white bg-orange-500 rounded md:bg-transparent md:text-orange-500 md:p-0 dark:text-white" aria-current="page">Home</a>
                             </li>
-                            <li>
-                                <a href="/generator"
-                                    className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
-                                    Generator</a>
-                            </li>
 
                             {Auth.loggedIn() ? (
                                 <>
+                                    <li>
+                                        <a href="/generator"
+                                            className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
+                                            Generator</a>
+                                    </li>
                                     <li>
                                         <a href="/profile"
                                             className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
@@ -42,11 +42,18 @@ function Nav() {
                                     </li>
                                 </>
                             ) : (
-                                <li>
-                                    <a href="/login"
-                                        className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
-                                        Log In/Signup</a>
-                                </li>
+                                <>
+                                    <li>
+                                        <a href="/login"
+                                            className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
+                                            Log In</a>
+                                    </li>
+                                    <li>
+                                        <a href="/signup"
+                                            className="block py-2 pl-3 pr-4 text-gray rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-500 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray dark:hover:text-slate-900 md:dark:hover:bg-transparent">
+                                            Signup</a>
+                                    </li>
+                                </>
                             )}
 
                         </ul>
