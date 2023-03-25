@@ -1,6 +1,6 @@
 # P+
->### Module xx UNC Coding Bootcamp Challenge - challenge title <br><br>
->  Project description... what did u learn? what problem did u solve <br><br>
+>### Password Plus - A Password Generator and Storage Application <br><br>
+>  I built this application with the intention of upscaling my first ever JavaScript application for the UNC Coding Bootcamp. Originally, this application was a password generator that accepted user input via alerts and returned a randomized passcode. I repurposed that project to provide users a seamless UI experience on both mobile and desktop devices with the enhanced ability to store generated passwords to their accounts and assign them to various apps and services. Utilizing a GraphQL API built with an Apollo Server, this app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. Additionally, this application meets PWA criteria and features multiple data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. This application is available for installation and is fully functional offline.  <br><br>
 
 ![JavaScript][js-url]
 ![HTML][html-url]
@@ -12,11 +12,11 @@
 ![jswt][jswtoken-url]
 ![Apollo-GraphQL][apollo-url]
 ![GraphQL][graphql-url]
-![Heroku][heroku-url]
 ![Tailwinds](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
-![Demo](https://media.giphy.com/media/m8uzMtGASqiP2vNPL9/giphy.gif) | ![generator](https://drive.google.com/uc?export=view&id=1A_HQUQVhCl2798z9gbB8_f-ra_WLwK6k) 
+![Demo](https://media.giphy.com/media/m8uzMtGASqiP2vNPL9/giphy.gif)  ![generator](https://drive.google.com/uc?export=view&id=1QxxEniOIpC9GA26E0obBNDGiOOmF2WFA) 
+![generator](https://drive.google.com/uc?export=view&id=1SRnpAE6cBlAO6SUnOpHGp0yinTeD9rJ8)
 
 
 ## Installation
@@ -41,7 +41,7 @@ npm run develop
 
 ## Usage
 
-Browse for books by title or author using the search bar on the main page. You must log in or create an account in order to save books to your collection. You can view and edit your collection by selecting the 'Saved Books" navigation item.
+Generate custom, strong passwords according to the criteria that you select. Store those passwords to your account and associate them with various apps and services.
 
 ## Deployed Application
 You can view the live application
