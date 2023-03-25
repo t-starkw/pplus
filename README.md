@@ -13,6 +13,7 @@
 ![Apollo-GraphQL][apollo-url]
 ![GraphQL][graphql-url]
 ![Heroku][heroku-url]
+![Tailwinds](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
 <!-- ![Image](https://drive.google.com/uc?export=view&id=1tavtS08f-7WVQNws899sJl9xHCPR6b7v) -->
@@ -23,7 +24,7 @@
 Clone the repository:
 
 ```sh
-git clone git@github.com:t-starkw/graphic-ql.git
+git clone git@github.com:t-starkw/pplus.git
 ```
 
 Install the required dependencies:
@@ -44,7 +45,7 @@ Browse for books by title or author using the search bar on the main page. You m
 
 ## Deployed Application
 You can view the live application
-[here](https://graphic-ql.herokuapp.com/)
+[here](https://pplus.onrender.com/)
 
 ## Meta
 
@@ -56,7 +57,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 ## Contributing
 
-1. Fork it (<https://github.com/t-starkw/graphic-ql/fork>)
+1. Fork it (<https://github.com/t-starkw/pplus/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
