@@ -16,7 +16,7 @@
 ![Tailwinds](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
-<!-- ![Image](https://drive.google.com/uc?export=view&id=1tavtS08f-7WVQNws899sJl9xHCPR6b7v) -->
+![Demo](https://media.giphy.com/media/m8uzMtGASqiP2vNPL9/giphy.gif) | ![generator](https://drive.google.com/uc?export=view&id=1A_HQUQVhCl2798z9gbB8_f-ra_WLwK6k) 
 
 
 ## Installation
