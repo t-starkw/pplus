@@ -63,9 +63,9 @@ function Login() {
                                     onChange={handleChange}></input>
                             </div>
                             <div className="flex items-baseline justify-between">
-                                <button 
-                                className="px-6 py-2 mt-4 text-white bg-orange-500 rounded-lg hover:bg-orange-600"
-                                type="submit">Login</button>
+                                <button
+                                    className="px-6 py-2 mt-4 text-white bg-orange-500 rounded-lg hover:bg-orange-600"
+                                    type="submit">Login</button>
                                 <a href="/signup" className="text-sm text-blue-600 hover:underline">New here? Sign up</a>
                             </div>
                         </div>
